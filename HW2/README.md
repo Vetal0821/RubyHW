@@ -2,7 +2,9 @@
 - Перейдите по ссылке https://github.com/Vetal0821/RubyHW/tree/06b14a930d8550fec41da13ad6cf94dd239cd311
 - Нажмите кнопку "Code"
 - В выпадающем списке выберите "Download ZIP"
+
 ![1](https://user-images.githubusercontent.com/23245855/98832236-40985300-2445-11eb-9164-621edba354ae.png)
+
 - Распакуйте скачанный архив в нужную вам папку
 - После распаковки архива у вас будет папка со следующим содержанием.
 ![2](https://user-images.githubusercontent.com/23245855/98832572-a684da80-2445-11eb-9d83-c96430499aa4.png)
