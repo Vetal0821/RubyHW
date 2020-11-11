@@ -240,8 +240,7 @@ p '--------------'
 print numeric_array58 = Array.new(10) { rand(-100...100) } #питання чи можна реалізувати 58 задачу аналогічно 57 тільки після його обяви застосувати реверс 
 puts
 puts numeric_array58.rindex {|x| x == numeric_array58.min || x == numeric_array58.max}
-numeric_array58 = Array.new(10) { rand(-100...100) }
-puts numeric_array58.rindex { |x| x == numeric_array58.min || x == numeric_array58.max }
+
 p '--------------'
 
 	puts "61 Дан целочисленный массив. Найти два наибольших элемента."
