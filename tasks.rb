@@ -268,8 +268,7 @@ p '--------------'
 	puts "72 Дан целочисленный массив. Удалить все элементы, встречающиеся более двух раз."
 print numeric_array72 = Array.new(10) { rand(-100...100) }
 puts
-repeating_elements_more_than_2 = numeric_array72.uniq.select { |x| numeric_array72.count(x) > 2 }
-repeating_elements_more_than_2.each { |x| numeric_array72.delete(x) }
+numeric_array72.reject! { |elem| numeric_array72.count(elem) >= 2 }
 print numeric_array72
 puts
 p '--------------'
