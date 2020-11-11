@@ -233,7 +233,6 @@ p '--------------'
 	puts "57 Дан целочисленный массив. Найти индекс первого экстремального (то есть минимального или максимального) элемента."
 print numeric_array57 = Array.new(10) { rand(-100...100) }
 puts
-puts numeric_array57.index {|x| x == numeric_array57.min || x == numeric_array57.max}
 puts numeric_array57.index {|x| x == numeric_array57.min || x == numeric_array57.max}																								
 p '--------------'
 	
