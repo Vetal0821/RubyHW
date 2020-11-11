@@ -281,6 +281,14 @@ repeating_elements_only_2.each { |x| numeric_array73.delete(x) }
 print numeric_array73
 puts
 p '--------------'
+
+puts "73 Дан целочисленный массив. Удалить все элементы, встречающиеся ровно два раза." #другий спосіб реалізації
+print numeric_array73_1 = Array.new(10) { rand(-100...100) }
+puts
+numeric_array73_1.reject! { |elem| numeric_array73_1.count(elem) == 2 }
+print numeric_array73_1
+puts
+p '--------------'
 	
 	puts "74 Дан целочисленный массив. Удалить все элементы, встречающиеся ровно три раза."		
 print numeric_array74 = Array.new(10) { rand(-100...100) }
@@ -288,6 +296,14 @@ puts
 repeating_elements_only_3 = numeric_array74.uniq.select { |x| numeric_array74.count(x) == 3 }
 repeating_elements_only_3.each { |x| numeric_array74.delete(x) }
 print numeric_array74
+puts
+p '--------------'
+
+puts "74 Дан целочисленный массив. Удалить все элементы, встречающиеся ровно три раза." #другий спосіб реалізації
+print numeric_array74_1 = Array.new(10) { rand(-100...100) }
+puts
+numeric_array74_1.reject! { |elem| numeric_array74_1.count(elem) == 3 }
+print numeric_array74_1
 puts
 p '--------------'
 																					
