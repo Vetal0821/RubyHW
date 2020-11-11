@@ -127,20 +127,14 @@ p '--------------'
 	puts "39 Дан целочисленный массив. Найти количество минимальных элементов."																								
 print numeric_array39 = Array.new(10) { rand(-100...100) }
 puts
-min_num_array39 = numeric_array39.min
-length_array39 = numeric_array39.length
-average_value = min_num_array39 / length_array39
-puts numeric_array39.select { |x| x > average_value }.size
+print numeric_array39.count{|el| el == numeric_array39.min}
 puts
 p '--------------'
 
 	puts "40 Дан целочисленный массив. Найти количество максимальных элементов."
 print numeric_array40 = Array.new(10) { rand(-100...100) }
 puts
-max_num_array40 = numeric_array40.max
-length_array40 = numeric_array40.length
-average_value = max_num_array40 / length_array40
-puts numeric_array40.select { |x| x < average_value }.size
+print numeric_array40.count(numeric_array40.max)
 puts
 p '--------------'
 
