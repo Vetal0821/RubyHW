@@ -45,7 +45,7 @@ p '--------------'
 	puts "12 Дан целочисленный массив. Заменить все отрицательные элементы на значение максимального."
 print numeric_array12 = Array.new(10) { rand(-100...100) } # розібратися з завданням 9 бо не все виводить (подивитись як буде виконано 50 задач)
 puts
-min = numeric_array12.max
+min = numeric_array12.min
 print numeric_array12 = numeric_array12.map { |e| e < 0 ? min : e }
 puts
 p '--------------'
