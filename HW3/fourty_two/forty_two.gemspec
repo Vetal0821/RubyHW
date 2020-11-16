@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'forty_two'
-  s.version     = '0.0.1'
+  s.version     = '0.0.7'
   s.date        = '2020-11-16'
   s.summary     = "FortyTwo gem"
   s.description = "Write a FortyTwo gem that extends the Integer method and adds the .fourty_two method to numbers?"
