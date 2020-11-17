@@ -1,0 +1,3 @@
+# frozen_string_literal: true
+
+gem 'pet_html', '~> 0.0.1', git: 'https://github.com/Vetal0821/pet_html_hw3', :branch => 'main'
