@@ -1,0 +1,10 @@
+--- !ruby/object:Pet
+animal: panda
+name: Xiao
+health: 100
+mood: 100
+hunger: 5
+sleeping: 5
+pet_toilet: 5
+pet_cleanliness: 100
+user: admin

@@ -1,0 +1,4 @@
+--- !ruby/object:Admin
+username: admin
+password: '1'
+role: admin
