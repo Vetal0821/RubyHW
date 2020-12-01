@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tamagotchi index.html.erb</title>
+    <link rel="stylesheet" href="/public/index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/index.css">
+  </head>
+  <body class="body_index">
+
+  <h1> <%= name %> Создан(а)</h1>
+  <img src="https://pbs.twimg.com/media/Cxjpjf6WQAEQoFZ.jpg" alt="Panda">
+
+
+  <h3>Покормить   <%= get('feed')  %></h3>
+  <h3>Здоровье <%= get('health')%></h3>
+  <h3>Сон  <%= get('sleeping') %></h3>
+  <h3>Настроние  <%= get('mood') %></h3>
+  <h3>Чистота  <%= get('pet_cleanliness') %></h3>
+  <h3>Знание Ruby  <%= get('pet_ruby') %></h3>
+  
+
+ <!-- <table class="table">
+  <tr>
+    <td class="td"><h3>Покормить   <%= get('feed')  %></h3></td>
+    <td><h3>Здоровье <%= get('health')%></h3></td>
+    <td><h3>Сон  <%= get('sleeping') %></h3></td>
+  </tr>
+
+  <tr>
+    <td><h3>Настроние  <%= get('mood') %></h3></td>
+    <td><h3>Чистота  <%= get('pet_cleanliness') %></h3></td>
+    <td><h3>Знание Ruby  <%= get('pet_ruby') %></h3></td>
+  </tr>
+</table> -->
+
+<div class="row" >
+  <form action="/change" method="get">
+
+    <button type="submit" class="btn btn-outline-dark" name="feed" value="feed">Покормить</button>
+
+    <button type="submit" class="btn btn-outline-dark" name="health" value="health">Полечить</button>
+
+    <button type="submit" class="btn btn-outline-dark" name="sleeping" value="sleeping">Поспать</button>
+
+    <button type="submit" class="btn btn-outline-dark" name="mood" value="mood">Настроние</button>
+
+    <button type="submit" class="btn btn-outline-dark" name="pet_cleanliness" value="pet_cleanliness">Покупать</button>
+
+    <button type="submit" class="btn btn-outline-dark" name="pet_ruby" value="pet_ruby">Учить Ruby</button>
+
+    <!--<button type="submit" class="btn btn-outline-warning" name="relax" value="relax">Релаксировать</button>-->
+
+  </form>
+
+  <form action="/exit" method="get">
+
+    <button type="submit" class="btn btn-outline-dark" name="apathy" value="apathy">Апатия</button>
+
+  </form>
+
+  <form action="/rest" method="get">
+
+    <button type="submit" class="btn btn-outline-dark" name="" value="">Релакс</button>
+
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

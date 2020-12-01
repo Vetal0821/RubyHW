@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tamagotchi rest.html.erb</title>
+    <link rel="stylesheet" href="/public/index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body class="body_index">
+
+  <h1> <%= name %> Релаксирует</h1>
+  <img src="https://img2.goodfon.ru/wallpaper/nbig/7/57/panda-otdyh-relaks-derevo.jpg" alt="Panda" style="max-width: 500px; max-height: 500px">
+
+    <h3>Релакс: <%= get('relax') %></h3>
+
+  <div class="row">
+
+  <form action="/rest" method="get" style="">
+
+    <button type="submit" class="btn btn-outline-dark" name="relax"
+    value="relax">Релаксировать</button>
+
+  </form>
+
+  <form action="/exit" method="get" style="">
+
+    <button type="submit" class="btn btn-outline-dark" name="apathy" value="apathy">Апатия</button>
+
+  </form>
+
+  <form action="/start" method="get" style="" ">
+
+    <button type="submit" class="btn btn-outline-dark" name="" value="">Обнулить</button>
+
+  </form>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

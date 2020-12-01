@@ -1,0 +1,32 @@
+.row{
+  justify-content: center;
+}
+
+.img{
+  text-align: center;
+}
+
+.h3_complete{
+  text-align: center;
+  font-size: 30px;
+}
+
+.body_index{
+text-align: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.table {
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 1px 0;
+}
+
+.td {
+  text-align: center;
+  padding: 1px 0;
+  }
